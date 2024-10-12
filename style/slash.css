@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    color: #DBD3D3;
+    scroll-behavior: smooth;
+}
+li {
+    list-style-type: none;
+}
+nav{
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+body{
+    
+    font-family: "Lexend";
+    background:
+      conic-gradient(from 135deg,#091057 90deg,#0000 0) 78px calc(78px/2),
+      conic-gradient(from 135deg,#024caa 90deg,#0000 0),
+      conic-gradient(from 135deg at 50% 0,#091057 90deg,#0000 0) #024caa;
+    background-size: 156px 78px;
+}
+li a{
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+li:not(.slash) a:hover{
+    color: #091057;
+}
+nav div{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    padding-right: 20px;
+    font-size: 1.2rem;
+    font-family: "Lexend Zetta","san-serif";
+    justify-items: end;
+    background-color: #091057;
+    box-shadow: 0 2px 10px #024CAA;
+    color: whitesmoke;
+    height: 60px;
+    align-items: center;
+    
+}
+
+nav div li:not(.slash){
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+nav div li:hover:not(.slash){
+    background-color: #DBD3D3;
+    color: #091057;
+}
+.slash{
+    justify-self: start;
+    font-size: 1.7rem;
+    font-weight: 600;
+    
+    
+}
+.background{
+    
+    height: 100vh;
+    p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 4rem;
+       
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: sepia(100%) saturate(300%) brightness(40%) hue-rotate(180deg);
+
+}
+p:last-child{
+    font-size: 30px;
+    margin-top: 80px;
+}  
+
+}
+.service-background{
+    
+    height: 200vh;
+    background-color: rgb(9, 16, 87, 0.8);
+    z-index: 2;
+}
+.service-background .container{
+    width: 80%;
+    height: 80%;
+    border: solid #DBD3D3 3px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    background-color: #091057 ;
+    box-shadow: 0px 0px 7px  #DBD3D3;
+    p{
+        position: absolute;
+        font-size: 3rem;
+        top: 10%;
+        left: 65%;
+        
+    }
+    ul{
+        position: absolute;
+        top: 20%;
+        left: 65%;
+        padding: 5px;
+        
+        
+    }
+    li{
+        list-style-type: disc;
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+    button{
+        position: absolute;
+        top: 37%;
+        left: 65%;
+        padding: 8px 40px 8px;
+        font-size: 20px;
+        border: none;
+        border-radius: 0;
+        background-color: #024caa;
+        color: #DBD3D3;
+        cursor: pointer;
+        
+
+    }
+    button:hover{
+        background-color: #DBD3D3;
+        color: #024caa;
+    }
+}
+.photo-s{
+    width: 50%;
+    height: 45%;
+    border: solid #DBD3D3 2px;
+    background-image: url(photo/what-is-graphic-design-header.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.icons{
+    width: 100%;
+    height: 10%;
+    border: solid #DBD3D3 2px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 2rem;
+    .icon{
+        border: solid #DBD3D3 2px;
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+.photo-s2,.photo-s3{
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 45%;
+    border: solid #DBD3D3 2px;
+    
+    
+}
+.photo-s2{
+    background-image: url(photo/20240118_221943.jpg);
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
+.photo-s3:last-child{
+    p:last-child{
+        font-size: 1rem;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+    p:first-child{
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+}
+.projects{
+    
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(9, 16, 87, 0.8);
+    .container{
+        height: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        padding: 40px;
+        grid-gap: 40px;
+        
+    }
+    h1{
+        margin-top: -30px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+    .photo{
+        border: solid grey 2px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        
+        
+        
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #DBD3D3;
+            color: #091057;
+            opacity: 0.8;
+            width: 100%;
+            height: 0%;
+            z-index: 1;
+            overflow: hidden;
+            transition: ease-in-out 1s;
+        }
+    
+    }
+    .photo:nth-child(3){
+        grid-row: 2 span;
+    }
+    button{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 80px 10px;
+            font-size: 20px;
+            border: none;
+            border-radius: 0;
+            background-color: #024caa;
+            color: #DBD3D3;
+            cursor: pointer;
+    }
+        button:hover{
+            background-color: #DBD3D3;
+            color: #024caa;
+    }
+            
+    
+}
+.a{
+    background-image: url(projects/fərqlən.png);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+}
+.b{
+    background-image: url(projects/vaxtd.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c{
+    background-image: url(projects/Cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.d{
+    background-image: url(projects/keki3_Çalışma\ Yüzeyi\ 1.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.e{
+    background-image: url(projects/CHİCO3-02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.projects .photo:hover{
+    div{
+        height: 100%;
+        transition: ease-in-out 1s;
+    }
+}
+.opinions{
+    
+    height: 65vh;
+    background-color: rgb(9, 16, 87, 0.8);
+    .container{
+        width: 80%;
+        height: 80%;
+        border: solid #DBD3D3 2px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        background-color: #024CAA;
+        align-items: center;
+        
+        div{
+            padding: 10px;
+            border: solid #DBD3D3;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    p{
+        position: relative;
+    }
+    
+    
+    .head{
+        width: 100%;
+        height: 100%;
+        background-color: #091057;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.contacts{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(7, 12, 66, 0.87);
+    .container{
+        
+        display: grid;
+        width: 90%;
+        height: 60%;
+        grid-template-columns: 30% 40% 30%;
+        justify-items: center;
+        
+
+        .contact{
+            display: grid;
+            align-items: flex-start;
+
+            i{
+                font-size: 1.2rem;
+            }
+
+        }
+        .e-mail{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(4, 1fr) ;
+            grid-gap: 10px;
+            input{
+                border: none;
+                width: 100%;
+                height: 30px;
+            }
+            .mail{
+                grid-column: 2 span;
+            }
+            button{
+                grid-column: 2 span;
+                height: 50px;
+                font-size: 20px;
+                border: none;
+                border-radius: 0;
+                background-color: #024caa;
+                color: #DBD3D3;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: #DBD3D3;
+                color: #024caa;
+            }
+        }
+        .nav{
+            width: 100%;
+            height: 100%;
+            text-align: right;
+            padding: 20px 50px;
+
+        a:hover{
+            background-color: #024caa;
+            color: #DBD3D3;
+            border-radius: 5px;
+            padding: 0 5px;
+        }
+
+
+        }
+    }
+}
+.social_media{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 150px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    background-color: rgb(9, 16, 87, 0.8);
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 2px 2px 0 #DBD3D3 ;
+    z-index: 1;
+   
+}
+footer{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    
+    div{
+        color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(3, 4, 26, 0.856);
+    }
+}
