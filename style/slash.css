@@ -19,7 +19,7 @@ nav{
 }
 body{
     
-    font-family: "Lexend";
+    font-family:"Lexend", sans-serif;
     background:
       conic-gradient(from 135deg,#091057 90deg,#0000 0) 78px calc(78px/2),
       conic-gradient(from 135deg,#024caa 90deg,#0000 0),
