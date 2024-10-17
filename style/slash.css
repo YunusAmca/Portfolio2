@@ -437,6 +437,7 @@ p:last-child{
     border-radius: 0 10px 10px 0;
     box-shadow: 2px 2px 2px 0 #DBD3D3 ;
     z-index: 1;
+    color: whitesmoke;
    
 }
 footer{
