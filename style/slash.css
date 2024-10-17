@@ -438,6 +438,10 @@ p:last-child{
     box-shadow: 2px 2px 2px 0 #DBD3D3 ;
     z-index: 1;
     color: whitesmoke;
+
+    a{
+        color: whitesmoke;
+    }
    
 }
 footer{
